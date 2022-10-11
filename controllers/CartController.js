@@ -11,7 +11,7 @@ const getById = (req, res) => {
   if (!cart) {
     res
       .status(204)
-      .json({ status: "False", result: `Cart '${id}' NO encontrado! ` });
+      .json({ status: "False", result: `Cart '${id}' Item not found! ` });
   }
   res.status(200).json({ status: "OK", data: cart });
 };
@@ -22,7 +22,7 @@ const createCart = (req, res) => {
   if (!productos) {
     res.status(401).json({
       status: "False",
-      result: "Producto no cumple con el formato requerido!",
+      result: "Wrong body format",
     });
   }
 
@@ -36,7 +36,7 @@ const createCart = (req, res) => {
   if (!createNewCart) {
     res.status(401).json({
       status: "False",
-      result: "Producto no cumple con el formato requerido!",
+      result: "Wrong body format!",
     });
   }
   res.status(201).json({ status: "Created", data: newCart });

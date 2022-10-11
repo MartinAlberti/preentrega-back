@@ -19,6 +19,16 @@
       "thumbnail": "http://image.com",
       "price": 2000,
       "stock": 4
+    },
+    {
+      "id": 3,
+      "timestamp": "Tue, 11 Oct 2022 21:34:18 GMT",
+      "title": "asd",
+      "description": "asd",
+      "code": 43,
+      "thumbnail": "asd",
+      "price": 123,
+      "stock": 12
     }
   ],
   "carrito": [
